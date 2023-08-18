@@ -34,7 +34,7 @@ export default function App() {
 
 const styles = StyleSheet.create({
   container: {
-    width: '100vh',
+    width: '100%',
     flex: 1,
     alignItems: 'center',
     alignContent: 'center'
