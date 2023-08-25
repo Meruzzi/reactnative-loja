@@ -2,6 +2,8 @@ import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Image, Text, Platform, View, FlatList } from 'react-native';
 import React, { useEffect, useState } from 'react'
 import axios from '../../axios.js'
+import { StackActions } from '@react-navigation/native';
+import Detalhes from 'Detalhes'
 
 export default function App() {
 
@@ -26,6 +28,7 @@ export default function App() {
               <Text>{evento.descricao}</Text>
               <Text>{evento.local}</Text>
             </View>
+              <Stack.Screen name="Detalhes" component={Detalhes} />
         </View>
       ))}
     </View>
