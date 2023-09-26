@@ -1,56 +1,88 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Image, Text, Platform, View, FlatList } from 'react-native';
-import React, { useEffect, useState } from 'react'
-import axios from '../../axios.js'
-import { StackActions } from '@react-navigation/native';
-import Detalhes from 'Detalhes'
+import React, { useEffect, useState } from 'react';
+import { StyleSheet, Image, Text, View, TouchableOpacity, ScrollView, TextInput, ActivityIndicator } from 'react-native';
+import axios from '../../axios.js';
 
-export default function App() {
+export default function App({ navigation }) {
+  const [eventos, setEventos] = useState([]);
+  const [filtro, setFiltro] = useState('');
+  const [eventosFiltrados, setEventosFiltrados] = useState([]);
+  const [isLoading, setIsLoading] = useState(true)
 
-  const [eventos, setEventos] = useState([])
   useEffect(() => {
-    axios
-      .get("/eventos.json")
-      .then(res => {
-          const list = axios
-          .converter(res.data)
-          setEventos(list)
-    }, [])
-  })
+    axios.get("/eventos.json").then((res) => {
+      const list = axios.converter(res.data);
+      setEventos(list);
+      setIsLoading(false)
+    }, []);
+  });
+
+  useEffect(() => {
+    const eventosFiltrados = eventos.filter((evento) =>
+      evento.nome.toLowerCase().includes(filtro.toLowerCase())
+    );
+    setEventosFiltrados(eventosFiltrados);
+  }, [filtro, eventos]);
 
   return (
-    <View style={styles.container}>
-      {eventos.map((evento, index) => (
-        <View key={index}>
-            <Image source={{ uri: `${evento.imagens}`}} style={styles.img} />
-            <View style={styles.cardInfEvento}>
-              <Text style={styles.tituloEvento}>{evento.nome}</Text>
-              <Text>{evento.descricao}</Text>
-              <Text>{evento.local}</Text>
-            </View>
-              <Stack.Screen name="Detalhes" component={Detalhes} />
-        </View>
-      ))}
-    </View>
+    <ScrollView>
+      <View style={styles.container}>
+        <TextInput
+          style={styles.input}
+          placeholder="Filtrar por nome do evento"
+          onChangeText={(text) => setFiltro(text)}
+        />
+        {isLoading ? (
+          <ActivityIndicator size="large" /> // Corrigido o erro aqui
+        ) : (
+          eventosFiltrados.map((evento, index) => (
+            <TouchableOpacity
+              key={index}
+              style={styles.cardEvento}
+              onPress={() => navigation.navigate('Tab', { evento })}
+            >
+              <Image source={{ uri: `${evento.imagens[0]}` }} style={styles.img} />
+              <View style={styles.cardInfEvento}>
+                <Text style={styles.tituloEvento}>{evento.nome}</Text>
+              </View>
+            </TouchableOpacity>
+          ))
+        )}
+      </View>
+    </ScrollView>
   );
 }
 
 const styles = StyleSheet.create({
   container: {
-    width: '100%',
     flex: 1,
     alignItems: 'center',
-    alignContent: 'center'
+    alignContent: 'center',
   },
   img: {
-    width: '100vw',
-    height: 150
+    width: '100%',
+    height: 200,
+  },
+  cardEvento: {
+    width: '100%',
+    position: 'relative',
   },
   cardInfEvento: {
-    backgroundColor: '#E0D0C1',
-    color: 'white'
+    position: 'absolute',
+    bottom: 0,
+    backgroundColor: 'rgba(0, 0, 0, 0.5)',
+    width: '100%',
   },
   tituloEvento: {
-    fontSize: 20
-  }
+    color: 'white',
+    fontSize: 22,
+  },
+  input: {
+    width: '90%',
+    height: 40,
+    borderWidth: 1,
+    borderColor: '#ccc',
+    borderRadius: 5,
+    paddingHorizontal: 10,
+    margin: 10,
+  },
 });
