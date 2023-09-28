@@ -1,0 +1,214 @@
+{
+  "produtos": [
+    {
+      "nome": "Smartphone XYZ",
+      "imagem": "https://images.unsplash.com/photo-1598327105666-5b89351aff97?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8c21hcnRwaG9uZXxlbnwwfHwwfHx8MA%3D%3D&w=1000&q=80",
+      "breve_descricao": "Um smartphone avançado com ótimo desempenho.",
+      "descricao": "Este smartphone XYZ é a escolha perfeita para quem busca desempenho e funcionalidades avançadas. Com um processador rápido, uma tela de alta resolução e uma câmera de qualidade, você terá uma experiência excepcional. Além disso, a bateria de longa duração permite que você use o telefone o dia todo sem se preocupar com recargas constantes. Não perca a oportunidade de ter o melhor em suas mãos!",
+      "preco": 1234.56,
+      "vendedor": {
+        "nome": "Joberto",
+        "telefone": "(123) 456-7890",
+        "email": "vendedor1@example.com",
+        "nota": 4.7
+      },
+      "nota_produto": 4.5,
+      "comentarios": [
+        {
+          "nome_usuario": "Luiz",
+          "data_publicacao": "2023-09-26",
+          "comentario": "Ótimo produto!",
+          "nota": 5
+        },
+        {
+          "nome_usuario": "Silvinha",
+          "data_publicacao": "2023-09-25",
+          "comentario": "Gostei, mas poderia ser mais barato.",
+          "nota": 3
+        }
+      ],
+      "perguntas": [
+        {
+          "nome_usuario": "Duardo",
+          "data_publicacao": "2023-09-24",
+          "duvida_usuario": "Este produto está disponível em outras cores?",
+          "resposta_vendedor": "Sim, temos em várias cores diferentes."
+        },
+        {
+          "nome_usuario": "Neymar",
+          "data_publicacao": "2023-09-23",
+          "duvida_usuario": "Qual é o prazo de entrega?",
+          "resposta_vendedor": "O prazo de entrega é de 5 a 7 dias úteis."
+        }
+      ]
+    },
+    {
+      "nome": "Fones de Ouvido ABC",
+      "imagem": "https://i2go.fbitsstatic.net/img/p/fone-de-ouvido-i2go-intra-auricular-1-2m-92db-preto-i2go-basic-90451/276937.jpg?w=378&h=378&v=no-value",
+      "breve_descricao": "Fones de ouvido de alta qualidade com cancelamento de ruído.",
+      "descricao": "Os fones de ouvido ABC são projetados para oferecer a melhor qualidade de som, com cancelamento de ruído para uma experiência de áudio imersiva. Além disso, são confortáveis de usar por longos períodos. Você pode usá-los em viagens, no trabalho ou simplesmente para curtir sua música favorita. Experimente a diferença com os fones de ouvido ABC!",
+      "preco": 130.00,
+      "vendedor": {
+        "nome": "Messi",
+        "telefone": "(987) 654-3210",
+        "email": "vendedor2@example.com",
+        "nota": 4.2
+      },
+      "nota_produto": 3.8,
+      "comentarios": [
+        {
+          "nome_usuario": "Vinicius JR",
+          "data_publicacao": "2023-09-22",
+          "comentario": "Não atendeu às minhas expectativas.",
+          "nota": 2
+        },
+        {
+          "nome_usuario": "Felipe",
+          "data_publicacao": "2023-09-21",
+          "comentario": "Bom custo-benefício.",
+          "nota": 4
+        }
+      ],
+      "perguntas": [
+        {
+          "nome_usuario": "Dogba",
+          "data_publicacao": "2023-09-20",
+          "duvida_usuario": "Qual é o material destes fones de ouvido?",
+          "resposta_vendedor": "Os fones são feitos de plástico resistente."
+        },
+        {
+          "nome_usuario": "Haaland",
+          "data_publicacao": "2023-09-19",
+          "duvida_usuario": "Este produto vem com garantia?",
+          "resposta_vendedor": "Sim, oferecemos uma garantia de 1 ano."
+        }
+      ]
+    },
+    {
+      "nome": "Câmera DSLR 123",
+      "imagem": "https://images.unsplash.com/photo-1502982720700-bfff97f2ecac?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fGNhbWVyYXxlbnwwfHwwfHx8MA%3D%3D&w=1000&q=80",
+      "breve_descricao": "Uma câmera profissional para fotógrafos sérios.",
+      "descricao": "A câmera DSLR 123 é a escolha ideal para fotógrafos sérios que buscam qualidade e versatilidade. Com recursos avançados, como uma ampla variedade de lentes intercambiáveis, esta câmera permite que você capture imagens de alta qualidade em diversas situações. Seja você um iniciante ou um profissional experiente, esta câmera irá atender às suas necessidades.",
+      "preco": 2000.00,
+      "vendedor": {
+        "nome": "Eduardo",
+        "telefone": "(555) 123-4567",
+        "email": "vendedor3@example.com",
+        "nota": 4.9
+      },
+      "nota_produto": 4.2,
+      "comentarios": [
+        {
+          "nome_usuario": "Bolsonaro",
+          "data_publicacao": "2023-09-18",
+          "comentario": "Muito satisfeito com a compra!",
+          "nota": 5
+        },
+        {
+          "nome_usuario": "Kleber",
+          "data_publicacao": "2023-09-17",
+          "comentario": "Boa qualidade.",
+          "nota": 4
+        }
+      ],
+      "perguntas": [
+        {
+          "nome_usuario": "Silvio",
+          "data_publicacao": "2023-09-16",
+          "duvida_usuario": "Qual é o tamanho desta câmera?",
+          "resposta_vendedor": "A câmera tem dimensões de 15x10x8 cm."
+        },
+        {
+          "nome_usuario": "Santos",
+          "data_publicacao": "2023-09-15",
+          "duvida_usuario": "Esta câmera é resistente à água?",
+          "resposta_vendedor": "Não, esta câmera não é resistente à água."
+        }
+      ]
+    },
+    {
+      "nome": "Mochila Super Leve",
+      "imagem": "https://global.cdn.magazord.com.br/opapapelaria/img/2023/01/produto/1397/image-4.png?ims=fit-in/600x600/filters:fill(white)",
+      "breve_descricao": "Uma mochila confortável e leve para uso diário.",
+      "descricao": "A mochila super leve é perfeita para quem precisa de uma mochila confortável e prática para o uso diário. Com um design ergonômico, ela oferece suporte para suas costas e ombros, tornando-a ideal para longos períodos de uso. Além disso, possui bolsos espaçosos para armazenar seus pertences de forma organizada. Leve-a para a escola, para o trabalho ou para suas aventuras ao ar livre!",
+      "preco": 199.99,
+      "vendedor": {
+        "nome": "Jequiti",
+        "telefone": "(777) 999-8888",
+        "email": "vendedor4@example.com",
+        "nota": 3.5
+      },
+      "nota_produto": 3.0,
+      "comentarios": [
+        {
+          "nome_usuario": "Joao",
+          "data_publicacao": "2023-09-14",
+          "comentario": "Não gostei, qualidade ruim.",
+          "nota": 1
+        },
+        {
+          "nome_usuario": "Kaka",
+          "data_publicacao": "2023-09-13",
+          "comentario": "Preço alto para o que oferece.",
+          "nota": 2
+        }
+      ],
+      "perguntas": [
+        {
+          "nome_usuario": "Popo",
+          "data_publicacao": "2023-09-12",
+          "duvida_usuario": "Posso devolver a mochila se não gostar?",
+          "resposta_vendedor": "Sim, aceitamos devoluções dentro de 30 dias."
+        },
+        {
+          "nome_usuario": "Veigh",
+          "data_publicacao": "2023-09-11",
+          "duvida_usuario": "Qual é a capacidade desta mochila?",
+          "resposta_vendedor": "A capacidade é de 20 litros."
+        }
+      ]
+    },
+    {
+      "nome": "Fogão a Gás Deluxe",
+      "imagem": "https://lasereletro.vteximg.com.br/arquivos/ids/162536-1000-1000/image-361ba3e7b274471996bd798d097edb49.jpg?v=637000169859200000",
+      "breve_descricao": "Um fogão a gás de alta qualidade para sua cozinha.",
+      "descricao": "O fogão a gás Deluxe é uma escolha excelente para sua cozinha. Com várias bocas e queimadores, você pode preparar diversas receitas ao mesmo tempo. Além disso, possui um forno espaçoso para assar suas delícias. Sua cozinha nunca será a mesma com o fogão a gás Deluxe!",
+      "preco": 700.00,
+      "vendedor": {
+        "nome": "Felipe ret",
+        "telefone": "(111) 222-3333",
+        "email": "vendedor4@example.com",
+        "nota": 3.5
+      },
+      "nota_produto": 3.0,
+      "comentarios": [
+        {
+          "nome_usuario": "Belo",
+          "data_publicacao": "2023-09-14",
+          "comentario": "Não gostei, qualidade ruim.",
+          "nota": 1
+        },
+        {
+          "nome_usuario": "Alcione",
+          "data_publicacao": "2023-09-13",
+          "comentario": "Preço alto para o que oferece.",
+          "nota": 2
+        }
+      ],
+      "perguntas": [
+        {
+          "nome_usuario": "Trump",
+          "data_publicacao": "2023-09-12",
+          "duvida_usuario": "Posso devolver a mochila se não gostar?",
+          "resposta_vendedor": "Sim, aceitamos devoluções dentro de 30 dias."
+        },
+        {
+          "nome_usuario": "Lula",
+          "data_publicacao": "2023-09-11",
+          "duvida_usuario": "Qual é a capacidade desta mochila?",
+          "resposta_vendedor": "A capacidade é de 20 litros."
+        }
+      ]
+    }
+  ]
+}
